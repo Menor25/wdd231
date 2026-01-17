@@ -1,0 +1,13 @@
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+}
+
+/* In this example, the hamburger button will display the open icon when the class of 'show' is not applied and the close icon when the class of 'show' is applied using the principle of CSS specificity. */
+
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}

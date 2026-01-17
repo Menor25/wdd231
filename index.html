@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce</title>
+    <meta name="description" content="The is home page for the chamber of commerce website" >
+    <meta name="author" content="Theophilus Ajiri Menor" >
+
+    <!-- styles link -->
+     <link rel="stylesheet" href="styles/normalize.css" />
+     <link rel="stylesheet" href="styles/small.css" />
+     <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- script link -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/dungeon.svg" alt="My logo" width="512" height="512">
+        <span>Theophilus Menor</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav class="navigation" id="nav-bar">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="upper-section">
+            <section>
+                <h2>About Me</h2>
+                <p>Hi, I am Theophilus Ajiri Menor from Nigeria. I am a student of BYU Idaho, current studying Software Development.</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <div class="image-container">
+                    <img src="images/menor.jpeg" alt="">
+                </div>
+            </section>
+            </div>
+            <section class="web-certificate">
+                <h2>Web Certificate Courses</h2>
+                <div class="categories">
+                    <button id="all">ALL</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <div id="course-container" class="course-list"></div>
+                <p>The total credit for courses listed above is: <span id="total-courses"></span></p>
+            </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Theophilus Menor | Benin, Nigeria</p>
+        <p id="lastModified">Last Modified</p>
+    </footer>
+</body>
+</html>
