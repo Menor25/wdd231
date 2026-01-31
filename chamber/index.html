@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benin City Chamber of Commerce</title>
+    <meta name="description" content="This website will serve as a resource hub for businesses in the city of Benin, Nigeria. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." >
+    <meta name="author" content="Theophilus Ajiri Menor" >
+
+    <!-- favicon -->
+     <link rel="shortcut icon" href="images/favicon-benin.ico" type="image/x-icon">
+
+
+    <!-- Facebook meta -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description" content="Discover the directory page for the chamber of commerce website.">
+    <meta property="og:url" content="https://menor25.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Benin City Chamber of Commerce">
+
+    <!-- styles link -->
+     <link rel="stylesheet" href="styles/normalize.css" />
+     <link rel="stylesheet" href="styles/small.css" />
+     <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- script link -->
+     <script src="scripts/home.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="image-logo">
+            <img src="images/benin-nobg-preview.png" alt="My logo" width="1024" height="1024">
+        </a>
+        <span>Benin City Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+        <nav class="navigation" id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Elevate Your Business in Benin City</h1>
+                <p>Join a network of leaders dedicated to economic growth in Edo State.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+            <picture>
+                <source srcset="images/hero.jpg" media="(min-width: 1000px)">
+                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
+                <img src="images/hero-small.jpg" alt="Benin City view" class="hero-img">
+            </picture>
+        </section>
+
+        <section class="home-grid">
+            
+            <div class="events-card">
+                <h2>Upcoming Events</h2>
+                <div class="event-details">
+                    <h3>Benin Business Expo 2026</h3>
+                    <p><strong>Date:</strong> February 15, 2026</p>
+                    <p><strong>Location:</strong> Protea Hotel Select Emotan</p>
+                    <p>Network with over 200 local business owners.</p>
+                </div>
+            </div>
+
+            <div class="weather-card">
+                <h2>Weather in Benin City</h2>
+                <div id="weather-icon"></div>
+                <p id="current-temp"></p>
+                <figcaption id="current-desc"></figcaption>
+                <hr>
+                <h3>3-Day Forecast</h3>
+                <div id="forecast" class="forecast-container">
+                </div>
+            </div>
+        </section>
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid">
+                </div>
+        </section>
+       
+    </main>
+    <footer>
+       <div class="footer-content">
+            <div class="contact-info">
+                <h3>Benin City Chamber of Commerce</h3>
+                <p>10 Oba Market Road</p>
+                <p>Benin City, Edo State, Nigeria</p>
+                <p>info@beninchamber.com</p>
+                <p>+234 800 123 4567</p>
+            </div>
+            
+            <div class="social">
+                <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="images/github.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="author-info">
+                <p>WDD231 Class Project</p>
+                <p>Theophilus Ajiri Menor</p>
+                <p>© <span id="currentyear"></span> Benin City Chamber</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

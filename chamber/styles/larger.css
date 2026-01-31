@@ -1,0 +1,74 @@
+@media screen and (min-width: 38rem) {
+    header, main, nav, footer, .image-container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+        display: flex;
+    }
+
+    header span {
+        font-size: 1rem;
+            padding-left: 0px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation ul {
+        display: flex;
+        width: 0rem;
+    }
+    .navigation a { 
+        border: none;
+    }
+
+    /*** Main ***/
+    .upper-section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+    }
+
+    .course-list {
+    display: flex;
+    flex-direction: row;
+
+    }
+
+    #members-container.list section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+
+    /** Home style **/
+    /* Hero Adjustments */
+    .hero-content {
+        max-width: 600px;
+    }
+
+    /* Side-by-Side Events and Weather */
+    .home-grid {
+        grid-template-columns: 2fr 1fr; /* Events take 2 parts, Weather takes 1 */
+    }
+
+    /* Spotlights in a Row */
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards side by side */
+    }
+}

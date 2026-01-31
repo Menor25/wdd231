@@ -1,0 +1,307 @@
+body {
+    box-sizing: border-box;
+    font-family: Roboto, 'san-serif';
+}
+
+:root {
+    --benin-red: #B11217;
+    --heritage-green: #0F5D2F;
+    --sunset-gold: #F2B705;
+    --white: #FFFFFF;
+    --dark-text: #333333;
+    --light-text: #666666;
+}
+
+ /*********** HEADER ************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px; /* Logo, text, hamburger */
+    align-items: end;
+    padding: 5px 0px 5px 10px;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: var(--benin-red);
+}
+
+header .image-logo {
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+header img {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--white);
+    padding-bottom: .7rem;
+    padding-left: 1.5rem;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: '\2630';
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: '\00D7';
+}
+
+/***** Navigation ******/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 28rem;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: var(--white);
+    text-decoration: none;
+
+}
+
+.navigation li.current {
+    background-color: var(--sunset-gold);
+}
+
+.navigation a:hover {
+    background-color:var(--sunset-gold);
+}
+
+/***** Footer styles *******/
+footer {
+    background-color: var(--benin-red);
+    padding: 1rem 10px;
+    text-align: center;
+    color: var(--white);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--sunset-gold);
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--sunset-gold);
+}
+
+/***** Main ****/
+main {
+    text-align: center;
+}
+
+main h1 {
+    text-align: left;
+}
+
+main .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/**** DIRECTORY MENU CONTROLS ****/
+.directory-controls {
+    text-align: center;
+    padding: 1rem;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+    margin: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: var(--light-text);
+    cursor: pointer;
+}
+
+.menu button.active {
+    background-color: var(--sunset-gold);
+    color: var(--white);
+}
+
+/**** MEMBER CARDS ****/
+#members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+.member-card img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    color: var(--sunset-gold);
+    margin: 0.5rem 0;
+}
+
+/* LIST VIEW STYLES */
+#members-container.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#members-container.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border: 1px solid var(--light-text);
+    text-align: left;
+}
+
+#members-container.list section img {
+    display: none; 
+}
+
+#members-container.list section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/*** Home styles ***/
+/* HERO SECTION */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overly for text readability */
+    padding: 1rem;
+    width: 80%;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #D4AF37; /* Gold color */
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* HOME GRID (Events & Weather) */
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.events-card, .weather-card, .spotlight-card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* WEATHER SPECIFIC */
+.weather-card, .events-card {
+    text-align: center;
+    border: 1px solid var(--sunset-gold);
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.weather-card #weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+}
+.forecast-day {
+    background: #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* SPOTLIGHTS */
+.spotlights {
+    padding: 1rem;
+}
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.spotlight-card {
+    text-align: center;
+    border-top: 5px solid var(--sunset-gold); /* Theme color */
+}
+.tag {
+    font-weight: bold;
+    color: #555;
+    font-size: 0.9rem;
+}

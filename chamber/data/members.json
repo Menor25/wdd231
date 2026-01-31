@@ -1,0 +1,74 @@
+[
+  {
+    "companyName": "Oniochi Obodo",
+    "address": "Oba Market Road, Benin City, Edo State",
+    "contactNumber": "+2349056768942",
+    "website": "www.oniochi.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Oniochi+Obodo",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Alex Paint",
+    "address": "Airport Road, Benin City, Edo State",
+    "contactNumber": "+234813485623",
+    "website": "www.alexpaint.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Alex+Paint",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "Lily Hospitals",
+    "address": "7 Boundary Road, GRA, Benin City, Edo State",
+    "contactNumber": "+2348113690592",
+    "website": "www.lilyhospitals.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Lily+Hospitals",
+    "membershipLevel": 3
+  },
+  {
+    "companyName": "Protea Hotel Select Emotan",
+    "address": "4 Central Road, Off Sapele Road, Benin City, Edo State",
+    "contactNumber": "+23452290000",
+    "website": "www.marriott.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Protea+Hotel",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "BEDC Electricity Plc",
+    "address": "5 Akpakpava Road, Benin City, Edo State",
+    "contactNumber": "+2348039012323",
+    "website": "www.beninelectric.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=BEDC+Electricity",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "JCON Digital Solutions",
+    "address": "10 Adesuwa Grammar School Road, Benin City, Edo State",
+    "contactNumber": "+2348123456789",
+    "website": "www.jcondigital.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=JCON+Digital",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Guinness Nigeria Plc",
+    "address": "Benin-Agbor Road, Ikpoba Hill, Benin City, Edo State",
+    "contactNumber": "+2348085685446",
+    "website": "www.guinness-nigeria.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Guinness+Nigeria",
+    "membershipLevel": 2
+  },
+  {
+    "companyName": "Edo College",
+    "address": "Murtala Mohammed Way, Benin City, Edo State",
+    "contactNumber": "+2348030000000",
+    "website": "www.edocollegebenin.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Edo+College",
+    "membershipLevel": 1
+  },
+  {
+    "companyName": "Iyore Grand Hotel & Suites",
+    "address": "1 Iyore Avenue, Off Ekehuan Road, Benin City, Edo State",
+    "contactNumber": "+2347055551234",
+    "website": "www.iyoregrandhotel.com",
+    "imageUrl": "https://placehold.co/600x400/png?text=Iyore+Grand+Hotel",
+    "membershipLevel": 2
+  }
+]
