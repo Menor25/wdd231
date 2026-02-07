@@ -1,0 +1,14 @@
+/* To style the modal dialog, you can use CSS to set the width, height, background color, and other properties of the dialog element. You can also use the ::backdrop pseudo-element to style the background of the modal dialog.  */
+
+dialog {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding: 20px;
+}
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}

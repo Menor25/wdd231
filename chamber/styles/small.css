@@ -94,6 +94,11 @@ header span {
     background-color:var(--sunset-gold);
 }
 
+.navigation ul .active a {
+    background-color: var(--sunset-gold);
+    color: var(--white);
+}
+
 /***** Footer styles *******/
 footer {
     background-color: var(--benin-red);
@@ -304,4 +309,144 @@ main .image-container img {
     font-weight: bold;
     color: #555;
     font-size: 0.9rem;
+}
+
+
+/**** Join Page Styles  ****/
+.join-container {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.join-grid {
+    display: flex;
+    flex-direction: column; /* Stacked on mobile */
+    gap: 2rem;
+}
+
+/* FORM STYLING */
+.join-form label {
+    display: block;
+    margin-bottom: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.join-form input, 
+.join-form select, 
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.join-form input:required {
+    border-left: 5px solid red;
+}
+
+.join-form input:required:valid {
+    border-left: 5px solid green;
+}
+
+.submitBtn {
+    background-color: #003366; /* Theme Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: #002244;
+}
+
+/* MEMBERSHIP CARDS & ANIMATION */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    /* Animation on Load */
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0; /* Start hidden */
+}
+
+/* Stagger animations */
+#np-card { animation-delay: 0.2s; }
+#bronze-card { animation-delay: 0.4s; }
+#silver-card { animation-delay: 0.6s; }
+#gold-card { animation-delay: 0.8s; }
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #eee;
+    border: 1px solid #999;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* MODAL STYLES */
+dialog {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* THANK YOU PAGE */
+.thank-you-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+.results-card {
+    background: #f9f9f9;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    margin-top: 2rem;
 }

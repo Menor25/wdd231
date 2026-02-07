@@ -71,4 +71,15 @@
     .spotlight-grid {
         grid-template-columns: repeat(3, 1fr); /* 3 cards side by side */
     }
+
+    /* Join Page Styles */
+    .join-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        align-items: start;
+    }
+    
+    .join-form {
+        margin-right: 2rem;
+    }
 }

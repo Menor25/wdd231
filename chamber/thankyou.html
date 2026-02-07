@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benin City Chamber of Commerce</title>
+    <title>Thank You | Benin City Chamber</title>
     <meta name="description" content="This website will serve as a resource hub for businesses in the city of Benin, Nigeria. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." >
     <meta name="author" content="Theophilus Ajiri Menor" >
 
@@ -33,9 +33,10 @@
 
 
     <!-- script link -->
-     <script src="scripts/home.js" defer></script>
+     <script src="scripts/directory.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+        <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -47,58 +48,28 @@
 
         <nav class="navigation" id="nav-bar">
         <ul>
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     </header>
-    
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Elevate Your Business in Benin City</h1>
-                <p>Join a network of leaders dedicated to economic growth in Edo State.</p>
-                <a href="join.html" class="cta-button">Join the Chamber</a>
-            </div>
-            <picture>
-                <source srcset="images/hero.jpg" media="(min-width: 1000px)">
-                <source srcset="images/hero-medium.jpg" media="(min-width: 500px)">
-                <img src="images/hero-small.jpg" alt="Benin City view" class="hero-img">
-            </picture>
-        </section>
 
-        <section class="home-grid">
-            
-            <div class="events-card">
-                <h2>Upcoming Events</h2>
-                <div class="event-details">
-                    <h3>Benin Business Expo 2026</h3>
-                    <p><strong>Date:</strong> February 15, 2026</p>
-                    <p><strong>Location:</strong> Protea Hotel Select Emotan</p>
-                    <p>Network with over 200 local business owners.</p>
-                </div>
-            </div>
-
-            <div class="weather-card">
-                <h2>Weather in Benin City</h2>
-                <div id="weather-icon"></div>
-                <p id="current-temp"></p>
-                <figcaption id="current-desc"></figcaption>
-                <hr>
-                <h3>3-Day Forecast</h3>
-                <div id="forecast" class="forecast-container">
-                </div>
-            </div>
-        </section>
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container" class="spotlight-grid">
-                </div>
-        </section>
-       
+    <main class="thank-you-container">
+        <h1>Application Received!</h1>
+        <p>Thank you for applying to join the Benin City Chamber of Commerce. We have received your details.</p>
+        
+        <div class="results-card">
+            <h2>Your Details</h2>
+            <p><strong>Name:</strong> <span id="display-first"></span> <span id="display-last"></span></p>
+            <p><strong>Email:</strong> <span id="display-email"></span></p>
+            <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+            <p><strong>Organization:</strong> <span id="display-org"></span></p>
+            <p><strong>Date Submitted:</strong> <span id="display-date"></span></p>
+        </div>
     </main>
+
     <footer>
        <div class="footer-content">
             <div class="contact-info">
@@ -123,5 +94,38 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Parse URL parameters
+        const currentUrl = window.location.href;
+        const everything = currentUrl.split('?');
+        
+        if (everything.length > 1) {
+            const formData = everything[1].split('&');
+
+            function show(key) {
+                formData.forEach((element) => {
+                    if (element.startsWith(key)) {
+                        let result = element.split('=')[1].replace(/%40/g, "@").replace(/\+/g, " ").replace(/%2B/g, "+").replace(/%3A/g, ":").replace(/%2F/g, "/");
+                        // Basic URL decode for spaces and special chars
+                        result = decodeURIComponent(result);
+                        
+                        const id = `display-${key}`;
+                        const elementToFill = document.getElementById(id);
+                        if(elementToFill) {
+                            elementToFill.textContent = result;
+                        }
+                    }
+                });
+            }
+
+            show("first");
+            show("last");
+            show("email");
+            show("phone");
+            show("org");
+            show("timestamp");
+        }
+    </script>
 </body>
 </html>

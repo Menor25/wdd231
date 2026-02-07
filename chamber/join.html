@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Benin City Chamber of Commerce</title>
+    <meta name="description" content="This website will serve as a resource hub for businesses in the city of Benin, Nigeria. The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses." >
+    <meta name="author" content="Theophilus Ajiri Menor" >
+
+    <!-- favicon -->
+     <link rel="shortcut icon" href="images/favicon-benin.ico" type="image/x-icon">
+
+
+    <!-- Facebook meta -->
+    <meta property="og:title" content="Chamber of Commerce">
+    <meta property="og:description" content="Discover the directory page for the chamber of commerce website.">
+    <meta property="og:url" content="https://menor25.github.io/wdd231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Benin City Chamber of Commerce">
+
+    <!-- styles link -->
+     <link rel="stylesheet" href="styles/normalize.css">
+     <link rel="stylesheet" href="styles/small.css">
+     <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- script link -->
+     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="image-logo">
+            <img src="images/benin-nobg-preview.png" alt="My logo" width="1024" height="1024">
+        </a>
+        <span>Benin City Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+        <nav class="navigation" id="nav-bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <main>
+       <section class="join-container">
+            <h1>Join the Chamber</h1>
+            
+            <div class="join-grid">
+                <form method="get" action="thankyou.html" class="join-form">
+                    
+                    <label>First Name*
+                        <input type="text" name="first" id="first" required autocomplete="given-name" title="Enter your first name">
+                    </label>
+
+                    <label>Last Name*
+                        <input type="text" name="last" id="last" required autocomplete="family-name" title="Enter your last name">
+                    </label>
+
+                    <label>Organizational Title
+                        <input type="text" name="title" id="title" autocomplete="organization-title" 
+                               pattern="[A-Za-z\s-]{7,}" title="Must be at least 7 alpha characters, hyphens, or spaces">
+                    </label>
+
+                    <label>Email Address*
+                        <input type="email" name="email" id="email" required autocomplete="email" 
+                               placeholder="example@domain.com" title="Enter a valid email address">
+                    </label>
+
+                    <label>Mobile Number*
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Enter your mobile number">
+                    </label>
+
+                    <label>Business/Organization Name*
+                        <input type="text" name="org" id="org" required autocomplete="organization" title="Enter your organization name">
+                    </label>
+
+                    <label>Membership Level
+                        <select name="membership" id="membership" title="Select Membership Level">
+                            <option value="" disabled selected>Select a Level</option>
+                            <option value="np">NP Membership (No Fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label>Business Description
+                        <textarea name="description" id="description" title="Describe your business"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Sign Up Now" class="submitBtn">
+                </form>
+
+                <div class="membership-cards">
+                    <div class="card" id="np-card">
+                        <h3>NP Membership</h3>
+                        <button class="modal-btn" data-modal="modal-np">Learn More</button>
+                    </div>
+                    <div class="card" id="bronze-card">
+                        <h3>Bronze Membership</h3>
+                        <button class="modal-btn" data-modal="modal-bronze">Learn More</button>
+                    </div>
+                    <div class="card" id="silver-card">
+                        <h3>Silver Membership</h3>
+                        <button class="modal-btn" data-modal="modal-silver">Learn More</button>
+                    </div>
+                    <div class="card" id="gold-card">
+                        <h3>Gold Membership</h3>
+                        <button class="modal-btn" data-modal="modal-gold">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <dialog id="modal-np" class="modal">
+            <h3>Non-Profit Membership</h3>
+            <p><strong>Cost:</strong> Free</p>
+            <p>Designed for non-profit organizations. Benefits include directory listing and access to general meetings.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-bronze" class="modal">
+            <h3>Bronze Membership</h3>
+            <p><strong>Cost:</strong> ₦50,000 / year</p>
+            <p>Includes directory listing, event discounts (10%), and access to basic training sessions.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-silver" class="modal">
+            <h3>Silver Membership</h3>
+            <p><strong>Cost:</strong> ₦100,000 / year</p>
+            <p>Includes all Bronze benefits plus Silver Spotlight on homepage and event discounts (20%).</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="modal-gold" class="modal">
+            <h3>Gold Membership</h3>
+            <p><strong>Cost:</strong> ₦200,000 / year</p>
+            <p>Includes all Silver benefits plus Gold Spotlight, priority event seating, and free training for 2 staff.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
+    </main>
+    <footer>
+       <div class="footer-content">
+            <div class="contact-info">
+                <h3>Benin City Chamber of Commerce</h3>
+                <p>10 Oba Market Road</p>
+                <p>Benin City, Edo State, Nigeria</p>
+                <p>info@beninchamber.com</p>
+                <p>+234 800 123 4567</p>
+            </div>
+            
+            <div class="social">
+                <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="images/github.svg" alt="LinkedIn"></a>
+            </div>
+
+            <div class="author-info">
+                <p>WDD231 Class Project</p>
+                <p>Theophilus Ajiri Menor</p>
+                <p>© <span id="currentyear"></span> Benin City Chamber</p>
+                <p id="lastModified">Last Modified: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
