@@ -82,4 +82,54 @@
     .join-form {
         margin-right: 2rem;
     }
+
+    /* Discovery page */
+    .places-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            "area1 area2 area3 area4"
+            "area5 area6 area7 area8";
+    }
+
+    @media (hover: hover) {
+        .place-card figure {
+            overflow: hidden; /* Keep image inside border */
+        }
+
+        .place-card:hover img {
+            transform: scale(1.1); /* Zoom effect */
+            filter: brightness(0.9);
+        }
+        
+        .place-card:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+    }
+}
+
+/* SMALL SCREENS (Mobile: 1 Column) */
+@media screen and (max-width: 640px) {
+    .places-container {
+        grid-template-areas: 
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5"
+            "area6"
+            "area7"
+            "area8";
+    }
+}
+
+/* MEDIUM SCREENS (Tablet: 2 Columns) */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    .places-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "area1 area2"
+            "area3 area4"
+            "area5 area6"
+            "area7 area8";
+    }
 }

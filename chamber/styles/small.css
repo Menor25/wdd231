@@ -450,3 +450,70 @@ dialog::backdrop {
     text-align: left;
     margin-top: 2rem;
 }
+
+/* Discover styles */
+.visitor-message {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    color: #003366;
+    margin: 1rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* CARD STYLES */
+.place-card {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.place-card figure {
+    margin: 0;
+    width: 100%;
+}
+
+.place-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.place-card h2 {
+    font-size: 1.2rem;
+    color: var(--benin-red);
+    margin-top: 0;
+}
+
+.place-card address {
+    font-style: italic;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.learn-btn {
+    background-color: var(--sunset-gold);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: auto;
+}
+
+.places-container {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
