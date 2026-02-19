@@ -1,0 +1,17 @@
+[
+  { "id": 1, "name": "Classic Push-Up", "category": "Strength", "difficulty": "Beginner", "duration": "10 mins", "description": "A core upper-body workout.", "image": "images/pushup.webp" },
+  { "id": 2, "name": "Bodyweight Squats", "category": "Lower Body", "difficulty": "Beginner", "duration": "15 mins", "description": "Builds leg and glute strength.", "image": "images/butt.webp" },
+  { "id": 3, "name": "Jumping Jacks", "category": "Cardio", "difficulty": "Beginner", "duration": "5 mins", "description": "Full body cardio warm-up.", "image": "images/cardio-outdoor.webp" },
+  { "id": 4, "name": "Plank Hold", "category": "Core", "difficulty": "Intermediate", "duration": "5 mins", "description": "Excellent for core stability.", "image": "images/abs-cadio.webp" },
+  { "id": 5, "name": "Lunges", "category": "Lower Body", "difficulty": "Beginner", "duration": "10 mins", "description": "Unilateral leg strengthening.", "image": "images/airobics.webp" },
+  { "id": 6, "name": "Burpees", "category": "Cardio", "difficulty": "Advanced", "duration": "10 mins", "description": "High-intensity full body blast.", "image": "images/cardio-training.webp" },
+  { "id": 7, "name": "Mountain Climbers", "category": "Core", "difficulty": "Intermediate", "duration": "5 mins", "description": "Dynamic plank variation for cardio and core.", "image": "images/couples-abs.webp" },
+  { "id": 8, "name": "Pull-Ups", "category": "Strength", "difficulty": "Advanced", "duration": "10 mins", "description": "King of back exercises.", "image": "images/pushup.webp" },
+  { "id": 9, "name": "Bicycle Crunches", "category": "Core", "difficulty": "Intermediate", "duration": "8 mins", "description": "Targets the obliques effectively.", "image": "images/cyclic-airobics.webp" },
+  { "id": 10, "name": "High Knees", "category": "Cardio", "difficulty": "Beginner", "duration": "5 mins", "description": "Fast-paced running in place.", "image": "images/gym.webp" },
+  { "id": 11, "name": "Tricep Dips", "category": "Strength", "difficulty": "Intermediate", "duration": "8 mins", "description": "Isolates the triceps using bodyweight.", "image": "images/leg.webp" },
+  { "id": 12, "name": "Glute Bridges", "category": "Lower Body", "difficulty": "Beginner", "duration": "10 mins", "description": "Activates the posterior chain.", "image": "images/muscle.webp" },
+  { "id": 13, "name": "Russian Twists", "category": "Core", "difficulty": "Intermediate", "duration": "7 mins", "description": "Rotational core strength.", "image": "images/street-run.webp" },
+  { "id": 14, "name": "Jump Rope", "category": "Cardio", "difficulty": "Beginner", "duration": "15 mins", "description": "Classic conditioning exercise.", "image": "images/abs-cadio.webp" },
+  { "id": 15, "name": "Diamond Push-Ups", "category": "Strength", "difficulty": "Advanced", "duration": "8 mins", "description": "Push-up variation targeting triceps.", "image": "images/couples-abs.webp" }
+]

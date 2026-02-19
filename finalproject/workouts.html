@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts | Menor Fitness Club</title>
+    <meta name="description" content="Browse our library of dynamic workout routines tailored for all fitness levels.">
+    <meta name="author" content="Theophilus Ajiri Menor">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Menor Fitness Club Home">
+                <img src="images/menorfitnessclub-removebg-preview.png" alt="Menor Fitness Club Logo" width="150" height="50">
+            </a>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html" class="active">Workouts</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Workout Library</h1>
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="All">All</button>
+            <button class="filter-btn" data-filter="Strength">Strength</button>
+            <button class="filter-btn" data-filter="Cardio">Cardio</button>
+            <button class="filter-btn" data-filter="Core">Core</button>
+        </div>
+        
+        <div id="workout-container" class="grid-container"></div>
+
+        <dialog id="workout-modal">
+            <div class="modal-inner">
+                <h2 id="modal-title"></h2>
+                <p id="modal-desc"></p>
+                <button id="close-modal" class="btn-secondary">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Menor Fitness Club</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+
+        <div class="social">
+                <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="images/github.svg" alt="LinkedIn"></a>
+            </div>
+    </footer>
+</body>
+</html>

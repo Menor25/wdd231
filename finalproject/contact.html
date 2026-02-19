@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us | Menor Fitness Club</title>
+    <meta name="description" content="Join Menor Fitness Club today and transform your health.">
+    <meta name="author" content="Theophilus Ajiri Menor">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Menor Fitness Club Home">
+                <img src="images/menorfitnessclub-removebg-preview.png" alt="Menor Fitness Club Logo" width="150" height="50">
+            </a>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="contact.html" class="active">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join The Club</h1>
+        <form action="thankyou.html" method="get" class="contact-form">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="goal">Primary Goal:</label>
+            <select id="goal" name="goal">
+                <option value="strength">Build Strength</option>
+                <option value="weightloss">Weight Loss</option>
+                <option value="endurance">Improve Endurance</option>
+            </select>
+
+            <button type="submit" class="btn-primary">Submit Application</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Menor Fitness Club</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+
+        <div class="social">
+                <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="images/github.svg" alt="LinkedIn"></a>
+            </div>
+    </footer>
+</body>
+</html>

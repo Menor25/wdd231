@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Menor Fitness Club</title>
+    <meta name="description" content="Menor Fitness Club provides expert general fitness information, tips, and daily workout ideas.">
+    <meta name="author" content="Theophilus Ajiri Menor">
+    <meta property="og:title" content="Menor Fitness Club">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://menorfitness.com/images/og-image.jpg">
+    <meta property="og:url" content="https://menorfitness.com">
+    
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <script type="module" src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+<div class="logo">
+            <a href="index.html" aria-label="Menor Fitness Club Home">
+                <img src="images/menorfitnessclub-removebg-preview.png" alt="Menor Fitness Club Logo" width="150" height="50">
+            </a>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="contact.html">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+        <section class="hero-split">
+            <div class="hero-content">
+                <h1>Find Your Energy & Strength</h1>
+                <p>Welcome to Menor Fitness Club. We provide the tips, routines, and motivation you need to build healthy habits—whether you're at the gym or in your living room.</p>
+                <a href="workouts.html" class="btn-primary">Explore Workouts</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/gym.webp" alt="A person working out energetically" width="600" height="400" loading="eager">
+            </div>
+        </section>
+
+        <section class="info-section">
+            <p id="visit-message" class="visit-message">Checking your last visit...</p>
+        </section>
+
+        <section class="tips-section">
+            <h2>Daily Fitness Tips</h2>
+            <div class="tips-grid">
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">💧</span>
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink water before, during, and after your workouts to keep your muscles functioning at their peak and prevent early fatigue.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">⏱️</span>
+                    <h3>Consistency is Key</h3>
+                    <p>A focused 20-minute daily workout is far more effective than a grueling 2-hour session once a week. Build a habit that lasts.</p>
+                </article>
+                <article class="tip-card">
+                    <span class="tip-icon" aria-hidden="true">🛌</span>
+                    <h3>Prioritize Rest</h3>
+                    <p>Your muscles actually grow when you rest. Ensure you get 7-9 hours of sleep every night for optimal recovery.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <h2>What Our Members Say</h2>
+            <div class="testimonials-grid">
+                <blockquote class="testimonial">
+                    <p>"Menor Fitness Club completely changed my approach to health. The workout ideas are simple, effective, and easy to fit into my busy schedule!"</p>
+                    <cite>- Sarah J.</cite>
+                </blockquote>
+                <blockquote class="testimonial">
+                    <p>"The daily tips keep me motivated. I finally understand that I don't need a fancy, expensive gym to build strength and stay healthy."</p>
+                    <cite>- Michael T.</cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Menor Fitness Club | Theophilus Ajiri Menor</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+
+        <div class="social">
+                <a href="#" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><img src="images/github.svg" alt="LinkedIn"></a>
+            </div>
+    </footer>
+</body>
+</html>
